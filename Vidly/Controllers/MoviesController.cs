@@ -10,13 +10,11 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        public ActionResult Index(int? pageIndex, string sortBy)
+        public ActionResult Index()
         {
-            if (!pageIndex.HasValue) pageIndex = 1;
+            var movies = GetMovies();
 
-            if (String.IsNullOrWhiteSpace(sortBy)) sortBy = "Name";
-
-            return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
+            return View(movies);
         }
 
         // GET: Movies/Random
@@ -51,5 +49,14 @@ namespace Vidly.Controllers
             return Content(year + "/" + month);
         }
 
+        private IEnumerable<Movie> GetMovies()
+        {
+            return new List<Movie>
+            {
+                new Movie {Id = 1, Name = "Final Fantasy"},
+                new Movie {Id = 2, Name = "Kingdom hearts"}
+            };
+        }
     }
+
 }
