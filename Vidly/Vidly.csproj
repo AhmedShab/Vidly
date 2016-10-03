@@ -240,34 +240,6 @@
     <Compile Include="Migrations\201610030600235_AddBirthDateToCustomer.Designer.cs">
       <DependentUpon>201610030600235_AddBirthDateToCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610032116144_UpdateDatabaseWithBirthday.cs" />
-    <Compile Include="Migrations\201610032116144_UpdateDatabaseWithBirthday.Designer.cs">
-      <DependentUpon>201610032116144_UpdateDatabaseWithBirthday.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610032128589_Genre.cs" />
-    <Compile Include="Migrations\201610032128589_Genre.Designer.cs">
-      <DependentUpon>201610032128589_Genre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610032135238_AddGenreTable.cs" />
-    <Compile Include="Migrations\201610032135238_AddGenreTable.Designer.cs">
-      <DependentUpon>201610032135238_AddGenreTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610032138252_AddGenreTableFix.cs" />
-    <Compile Include="Migrations\201610032138252_AddGenreTableFix.Designer.cs">
-      <DependentUpon>201610032138252_AddGenreTableFix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610032139181_AddGenreTableFix2.cs" />
-    <Compile Include="Migrations\201610032139181_AddGenreTableFix2.Designer.cs">
-      <DependentUpon>201610032139181_AddGenreTableFix2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610032149149_UpdatedMovie.cs" />
-    <Compile Include="Migrations\201610032149149_UpdatedMovie.Designer.cs">
-      <DependentUpon>201610032149149_UpdatedMovie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610032150161_PopulateGenre.cs" />
-    <Compile Include="Migrations\201610032150161_PopulateGenre.Designer.cs">
-      <DependentUpon>201610032150161_PopulateGenre.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -389,27 +361,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610030600235_AddBirthDateToCustomer.resx">
       <DependentUpon>201610030600235_AddBirthDateToCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610032116144_UpdateDatabaseWithBirthday.resx">
-      <DependentUpon>201610032116144_UpdateDatabaseWithBirthday.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610032128589_Genre.resx">
-      <DependentUpon>201610032128589_Genre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610032135238_AddGenreTable.resx">
-      <DependentUpon>201610032135238_AddGenreTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610032138252_AddGenreTableFix.resx">
-      <DependentUpon>201610032138252_AddGenreTableFix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610032139181_AddGenreTableFix2.resx">
-      <DependentUpon>201610032139181_AddGenreTableFix2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610032149149_UpdatedMovie.resx">
-      <DependentUpon>201610032149149_UpdatedMovie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610032150161_PopulateGenre.resx">
-      <DependentUpon>201610032150161_PopulateGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
