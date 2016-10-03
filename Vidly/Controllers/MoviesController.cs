@@ -26,7 +26,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var movies = _context.Movies.ToList();
+            var movies = _context.Movies.Include(m => m.Genre).ToList();
 
             return View(movies);
         }
@@ -59,7 +59,14 @@ namespace Vidly.Controllers
 
         public ActionResult Details(int id)
         {
-            return Content("something");
+            var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+
+            if (movie == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(movie);
         }
 
         [Route("movies/released/{year}/{month:regex(\\d{2}):range(1, 12)}")]
@@ -68,14 +75,6 @@ namespace Vidly.Controllers
             return Content(year + "/" + month);
         }
 
-        private IEnumerable<Movie> GetMovies()
-        {
-            return new List<Movie>
-            {
-                new Movie {Id = 1, Name = "Final Fantasy"},
-                new Movie {Id = 2, Name = "Kingdom hearts"}
-            };
-        }
     }
 
 }
