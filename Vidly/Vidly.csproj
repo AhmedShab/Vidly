@@ -244,6 +244,14 @@
     <Compile Include="Migrations\201610042237507_GenreNullFix.Designer.cs">
       <DependentUpon>201610042237507_GenreNullFix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610052302090_GenreIdNullFix.cs" />
+    <Compile Include="Migrations\201610052302090_GenreIdNullFix.Designer.cs">
+      <DependentUpon>201610052302090_GenreIdNullFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610052304311_GenreIdNullFixTwo.cs" />
+    <Compile Include="Migrations\201610052304311_GenreIdNullFixTwo.Designer.cs">
+      <DependentUpon>201610052304311_GenreIdNullFixTwo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -374,6 +382,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610042237507_GenreNullFix.resx">
       <DependentUpon>201610042237507_GenreNullFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610052302090_GenreIdNullFix.resx">
+      <DependentUpon>201610052302090_GenreIdNullFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610052304311_GenreIdNullFixTwo.resx">
+      <DependentUpon>201610052304311_GenreIdNullFixTwo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
