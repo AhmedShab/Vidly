@@ -240,17 +240,13 @@
     <Compile Include="Migrations\201610030600235_AddBirthDateToCustomer.Designer.cs">
       <DependentUpon>201610030600235_AddBirthDateToCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610042237507_GenreNullFix.cs" />
-    <Compile Include="Migrations\201610042237507_GenreNullFix.Designer.cs">
-      <DependentUpon>201610042237507_GenreNullFix.cs</DependentUpon>
+    <Compile Include="Migrations\201610052324493_GenreIdNull.cs" />
+    <Compile Include="Migrations\201610052324493_GenreIdNull.Designer.cs">
+      <DependentUpon>201610052324493_GenreIdNull.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610052302090_GenreIdNullFix.cs" />
-    <Compile Include="Migrations\201610052302090_GenreIdNullFix.Designer.cs">
-      <DependentUpon>201610052302090_GenreIdNullFix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610052304311_GenreIdNullFixTwo.cs" />
-    <Compile Include="Migrations\201610052304311_GenreIdNullFixTwo.Designer.cs">
-      <DependentUpon>201610052304311_GenreIdNullFixTwo.cs</DependentUpon>
+    <Compile Include="Migrations\201610052330091_PopulateGenre.cs" />
+    <Compile Include="Migrations\201610052330091_PopulateGenre.Designer.cs">
+      <DependentUpon>201610052330091_PopulateGenre.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -380,14 +376,11 @@
     <EmbeddedResource Include="Migrations\201610030600235_AddBirthDateToCustomer.resx">
       <DependentUpon>201610030600235_AddBirthDateToCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610042237507_GenreNullFix.resx">
-      <DependentUpon>201610042237507_GenreNullFix.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610052324493_GenreIdNull.resx">
+      <DependentUpon>201610052324493_GenreIdNull.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610052302090_GenreIdNullFix.resx">
-      <DependentUpon>201610052302090_GenreIdNullFix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610052304311_GenreIdNullFixTwo.resx">
-      <DependentUpon>201610052304311_GenreIdNullFixTwo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610052330091_PopulateGenre.resx">
+      <DependentUpon>201610052330091_PopulateGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

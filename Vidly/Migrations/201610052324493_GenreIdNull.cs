@@ -3,23 +3,15 @@ namespace Vidly.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class UpdateDatabaseWithBirthday : DbMigration
+    public partial class GenreIdNull : DbMigration
     {
         public override void Up()
-        {
-            DropForeignKey("dbo.Movies", "Genre_Id", "dbo.Genres");
-            DropIndex("dbo.Movies", new[] { "Genre_Id" });
-            DropTable("dbo.Movies");
-            DropTable("dbo.Genres");
-        }
-        
-        public override void Down()
         {
             CreateTable(
                 "dbo.Genres",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.Byte(nullable: false),
                         Name = c.String(nullable: false, maxLength: 255),
                     })
                 .PrimaryKey(t => t.Id);
@@ -31,15 +23,22 @@ namespace Vidly.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false, maxLength: 255),
                         GenreId = c.Byte(nullable: false),
-                        ReleaseDate = c.DateTime(nullable: false),
                         DateAdded = c.DateTime(nullable: false),
+                        ReleaseDate = c.DateTime(nullable: false),
                         NumberInStock = c.Byte(nullable: false),
-                        Genre_Id = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Genres", t => t.GenreId, cascadeDelete: true)
+                .Index(t => t.GenreId);
             
-            CreateIndex("dbo.Movies", "Genre_Id");
-            AddForeignKey("dbo.Movies", "Genre_Id", "dbo.Genres", "Id", cascadeDelete: true);
+        }
+        
+        public override void Down()
+        {
+            DropForeignKey("dbo.Movies", "GenreId", "dbo.Genres");
+            DropIndex("dbo.Movies", new[] { "GenreId" });
+            DropTable("dbo.Movies");
+            DropTable("dbo.Genres");
         }
     }
 }
