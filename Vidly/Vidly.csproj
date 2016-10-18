@@ -272,6 +272,10 @@
     <Compile Include="Migrations\201610052330091_PopulateGenre.Designer.cs">
       <DependentUpon>201610052330091_PopulateGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610180154098_SeedUsers.cs" />
+    <Compile Include="Migrations\201610180154098_SeedUsers.Designer.cs">
+      <DependentUpon>201610180154098_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -580,6 +584,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610052330091_PopulateGenre.resx">
       <DependentUpon>201610052330091_PopulateGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610180154098_SeedUsers.resx">
+      <DependentUpon>201610180154098_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
