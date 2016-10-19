@@ -33,3 +33,7 @@ textarea {
 .validation-summary-errors span {
     color: red;
 }
+
+.center {
+    margin-left: 200px;
+}
